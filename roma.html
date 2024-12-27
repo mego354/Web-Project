@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trip-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Tourism Company</title>
@@ -53,106 +54,127 @@
 
     <!-- main div for body that contains the main content for the page-->
     <main id="body_div">
-
+        <!-- title and small paragaraph for the content  -->
         <header>
-            <h1>Booking</h1>
-            <p>Your ultimate destination for winter sports and skiing adventures!</p>
+            <h1>Trip to Rome</h1>
+            <p>Enjoy a journey through the city of history and art</p>
+            <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Image of Roma" class="main-image">
         </header>
+        <hr>
 
-        <div class="container">
-            <!-- Form Section -->
-            <div class="form-container animate_animated animate_fadeIn">
-                <h2 class="text-center mb-4">Travel Booking Form</h2>
+        <section class="details">
+            <h2 class="text-center">Trip Details</h2>
+            <ul>
+                <li><span class="icon">⏳</span><strong>Duration:</strong> 5 Days / 4 Nights</li>
+                <li><span class="icon">📅</span><strong>Date:</strong> January 10th to January 15th</li>
+                <li><span class="icon">💰</span><strong>Price:</strong> $8000 (includes accommodation and meals)</li>
+                <li><span class="icon">🚍</span><strong>Transportation:</strong> Air-conditioned bus with Wi-Fi</li>
+                <li><span class="icon">🏨</span><strong>Accommodation:</strong> 5-star hotel (Hotel Eden Roma)</li>
+                <li><span class="icon">📍</span><strong>Meeting Point:</strong> Location provided after registration</li>
+                <li><span class="icon">🌡️</span><strong>Expected Weather:</strong> 17-20°C</li>
+                <li><span class="icon">🗣️</span><strong>Tour Language:</strong> English and Arabic</li>
+                <li><span class="icon">🔒</span><strong>Insurance:</strong> $1000 including health and accident insurance</li>
+            </ul>
+        </section>
+            
+        <section class="itinerary">
+            <h2>Itinerary</h2>
+            <div class="cards-container">
+                <!-- Day 1 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Qhs0HQQCqx1g5KoxYzC95QHaEK?rs=1&pid=ImgDetMain" alt="Day 1" class="card-image">
+                    <h3 class="card-title">Day 1</h3>
+                    <p class="card-description">Arrival at Rome International Airport, welcome by the trip team, transfer to the hotel, short rest followed by a tour at Piazza Navona, and a welcoming Italian dinner.</p>
+                </div>
     
-                <form id="booking-form">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="destination" class="form-label">Destination</label>
-                        <select class="form-select" id="destination" required>
-                            <option value="" disabled selected>--Select Destination--</option>
-                            <option value="Rome" data-cost="500">Rome</option>
-                            <option value="Paris" data-cost="400">Paris</option>
-                            <option value="Egypt" data-cost="300">Egypt</option>
-                            <option value="Maldives" data-cost="700">Maldives</option>
-                            <option value="Dubai" data-cost="600">Dubai</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="travel-method" class="form-label">Travel Method</label>
-                        <select class="form-select" id="travel-method" required>
-                            <option value="" disabled selected>--Select Travel Method--</option>
-                            <option value="Plane">Plane</option>
-                            <option value="Ship">Ship</option>
-                            <option value="Car">Car</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="payment-method" class="form-label">Payment Method</label>
-                        <select class="form-select" id="payment-method" required>
-                            <option value="" disabled selected>--Select Payment Method--</option>
-                            <option value="Credit Card">Credit Card</option>
-                            <option value="PayPal">PayPal</option>
-                            <option value="Bank Transfer">Bank Transfer</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="travel-date" class="form-label">Travel Date</label>
-                        <input type="date" class="form-control" id="travel-date" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Trip Type</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="fun-trip" name="trip-type" value="Fun Trip" />
-                                <label class="form-check-label" for="fun-trip">Fun Trip</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="business" name="trip-type" value="Business" />
-                                <label class="form-check-label" for="business">Business</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="education-trip" name="trip-type" value="Education Trip" />
-                                <label class="form-check-label" for="education-trip">Education Trip</label>
-                            </div>
-                        </div>
-                        <small class="text-danger error-message" id="trip-type-error"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="num-people" class="form-label">Number of People</label>
-                        <input type="number" class="form-control" id="num-people" min="1" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comments" class="form-label">Comments</label>
-                        <textarea class="form-control" id="comments" rows="3" placeholder="Add any comments (optional)"></textarea>
-                    </div>
-                
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button class="reset btn btn-secondary" type="reset">Reset</button>
-                </form>
-                
-                
+                <!-- Day 2 -->
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Day 2" class="card-image">
+                    <h3 class="card-title">Day 2</h3>
+                    <p class="card-description">Visit the Colosseum and Roman Forum, tour Piazza Venezia, have lunch at a local restaurant, see the Trevi Fountain, and enjoy free time to explore the city in the evening.</p>
+                </div>
+    
+                <!-- Day 3 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Qhs0HQQCqx1g5KoxYzC95QHaEK?rs=1&pid=ImgDetMain" alt="Day 3" class="card-image">
+                    <h3 class="card-title">Day 3</h3>
+                    <p class="card-description">Trip to the Vatican, visit St. Peter's Basilica, luxury lunch within the Vatican, and a tour of Trastevere, famous for its restaurants and cafes.</p>
+                </div>
+    
+                <!-- Day 4 -->
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Day 4" class="card-image">
+                    <h3 class="card-title">Day 4</h3>
+                    <p class="card-description">Optional tour to Pompeii, explore local markets for gifts, return to the hotel for relaxation.</p>
+                </div>
+    
+                <!-- Day 5 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Qhs0HQQCqx1g5KoxYzC95QHaEK?rs=1&pid=ImgDetMain" alt="Day 5" class="card-image">
+                    <h3 class="card-title">Day 5</h3>
+                    <p class="card-description">Free time in the morning, check-out, and transfer to the airport for departure.</p>
+                </div>
             </div>
-        </div>
+        </section>
     
+        <section class="features">
+            <h2 class="text-center mb-4">Trip Features</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <span class="icon">🚍</span>
+                    <h3>Comfortable Transportation</h3>
+                    <p>Air-conditioned buses equipped for your comfort throughout the trip.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🍽️</span>
+                    <h3>Daily Meals</h3>
+                    <p>Breakfast, lunch, and dinner at local and international restaurants.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🗣️</span>
+                    <h3>Tour Guide</h3>
+                    <p>Professional guide to explain history and activities.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">📶</span>
+                    <h3>Free Internet</h3>
+                    <p>Complimentary Wi-Fi during transportation.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">📸</span>
+                    <h3>Professional Photography</h3>
+                    <p>Capture professional photos with iconic landmarks.</p>
+                </div>
+            </div>
+        </section>
+
+            <div class="text-center booking-button-div">
+                <a class="booking-button" href="form.html">Book Now</a>
+            </div>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Review 1" class="review-image">
+                    <h3 class="review-name">Mohamed Magdy</h3>
+                    <p class="review-comment">Magnificent and luxurious!</p>
+                </div>
+    
+                <div class="review-card">
+                    <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Review 2" class="review-image">
+                    <h3 class="review-name">Sara</h3>
+                    <p class="review-comment">Excellent organization and the guide was very professional!</p>
+                </div>
+    
+                <div class="review-card">
+                    <img src="https://wallpapercave.com/wp/wp9166770.jpg" alt="Review 3" class="review-image">
+                    <h3 class="review-name">Karim</h3>
+                    <p class="review-comment">Highly recommend this trip. An unforgettable experience!</p>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     <!-- Fotter -->
@@ -239,7 +261,6 @@
                 <script src="js/bootstrap.js"></script>
                 <script src="js/popper.min.js"></script>
                 <script src="js/jquery-3.7.1.js"></script>
-                <script src="js/validate_book_form.js"></script>
             </div>
         </div>
     </div>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trip-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tourism Company</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index.html">
+                <img src="plane-solid.svg" alt="Brand Icon" style="height: 30px; margin-right: 8px;"> SKIER
+            </a>
+            <!-- button to togle the navbar for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar body-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="index.html">services 1</a></li>
+                            <li><a class="dropdown-item" href="index.html">services 2</a></li>
+                            <li><a class="dropdown-item" href="index.html">services 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main div for body that contains the main content for the page-->
+    <main id="body_div">
+        <!-- title and small paragaraph for the content  -->
+        <header>
+            <h1>Trip to Egypt</h1>
+            <p>Enjoy a trip through the land of history and Pharaonic civilization</p>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Image of egypt" class="main-image">
+
+        </header>
+        <hr>
+
+
+        <section class="details">
+            <h2>Trip Details</h2>
+            <ul>
+                <li><span class="icon">⏳</span><strong>Duration:</strong> 6 Days / 5 Nights</li>
+                <li><span class="icon">📅</span><strong>Date:</strong> January 1st - January 6th</li>
+                <li><span class="icon">💰</span><strong>Price:</strong> $5000 (Includes accommodation and meals)</li>
+                <li><span class="icon">🚍</span><strong>Transportation:</strong> Air-conditioned bus with Wi-Fi service</li>
+                <li><span class="icon">🏨</span><strong>Accommodation:</strong> 4-star hotel (Tolip)</li>
+                <li><span class="icon">📍</span><strong>Meeting Point:</strong> Determined after registration for the nearest convenient location</li>
+                <li><span class="icon">🌡️</span><strong>Expected Weather:</strong> Temperatures ranging from 22-28°C</li>
+                <li><span class="icon">🗣️</span><strong>Tour Language:</strong> English and Arabic</li>
+                <li><span class="icon">🔒</span><strong>Trip Insurance:</strong> $500 (includes health and accident insurance)</li>
+            </ul>
+        </section>
+    
+        <section class="itinerary">
+            <h2 class="text-center">Itinerary</h2>
+            <div class="cards-container">
+                <!-- Day 1 -->
+                <div class="card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Day 1 Activities" class="card-image">
+                    <h3 class="card-title">Day 1</h3>
+                    <p class="card-description">Arrival at Cairo Airport - Hotel check-in - Evening tour in Khan El Khalili - Welcome dinner at a Cairo restaurant.</p>
+                </div>
+    
+                <!-- Day 2 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.a331ba9f365f6849e04ebd1b145be908?rik=idgVSisuqX6AUA&pid=ImgRaw&r=0" alt="Day 2 Activities" class="card-image">
+                    <h3 class="card-title">Day 2</h3>
+                    <p class="card-description">Visit the Pyramids of Giza and the Sphinx - Tour of the Egyptian Museum - Nile sailing experience.</p>
+                </div>
+    
+                <!-- Day 3 -->
+                <div class="card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Day 3 Activities" class="card-image">
+                    <h3 class="card-title">Day 3</h3>
+                    <p class="card-description">Fly to Luxor - Tour of the Valley of the Kings - Visit Karnak Temple - Local market tour - Dinner by the Nile.</p>
+                </div>
+    
+                <!-- Day 4 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.a331ba9f365f6849e04ebd1b145be908?rik=idgVSisuqX6AUA&pid=ImgRaw&r=0" alt="Day 4 Activities" class="card-image">
+                    <h3 class="card-title">Day 4</h3>
+                    <p class="card-description">Travel to Aswan - Visit the High Dam - Tour of Philae Temple - Free time to explore Aswan.</p>
+                </div>
+    
+                <!-- Day 5 -->
+                <div class="card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Day 5 Activities" class="card-image">
+                    <h3 class="card-title">Day 5</h3>
+                    <p class="card-description">Optional trip to Abu Simbel Temple - Return to Cairo - Free evening for shopping.</p>
+                </div>
+    
+                <!-- Day 6 -->
+                <div class="card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Day 6 Activities" class="card-image">
+                    <h3 class="card-title">Day 6</h3>
+                    <p class="card-description">Hotel check-out - Visit Mohamed Ali Mosque - Transfer to the airport for departure.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>Trip Features</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <span class="icon">🚍</span>
+                    <h3>Comfortable Transport</h3>
+                    <p>Air-conditioned buses equipped for your comfort throughout the trip.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🍽️</span>
+                    <h3>Daily Meals</h3>
+                    <p>Breakfast, lunch, and dinner at local and international restaurants.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🗣️</span>
+                    <h3>Tour Guide</h3>
+                    <p>Professional guide to explain history and activities.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">📶</span>
+                    <h3>Free Wi-Fi</h3>
+                    <p>Complimentary Wi-Fi service during transportation.</p>
+                </div>
+            </div>
+        </section>
+    
+        
+        <div class="text-center booking-button-div">
+            <a class="booking-button" href="form.html">Book Now</a>
+        </div>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Customer Mohamed" class="review-image">
+                    <h3 class="review-name">Mohamed Magdy</h3>
+                    <p class="review-comment">Magnificent experience!</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Customer Sara" class="review-image">
+                    <h3 class="review-name">Sara</h3>
+                    <p class="review-comment">Excellent organization and a very professional guide!</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Customer Karim" class="review-image">
+                    <h3 class="review-name">Karim</h3>
+                    <p class="review-comment">Highly recommend this trip. Unforgettable experience!</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9efd0179247933.64f6ae03f20be.png" alt="Customer Megahd" class="review-image">
+                    <h3 class="review-name">Megahd</h3>
+                    <p class="review-comment">Dinner on the Nile was fantastic!</p>
+                </div>
+            </div>
+    
+        </section>
+
+    </main>
+    
+    <!-- Fotter -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="info">
+                        <span>TOURISM</span>
+                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                        <div class="copyright">
+                            <div>&copy;2024 - <span>Tourism Site</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="link">
+                        <h5 class="text-light">
+                            links
+                        </h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="about.html">our services</a></li>
+                            <li><a href="about.html">support</a></li>
+                            <li><a href="about.html">terms and conditions</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- about us section -->
+                <div class="col-md-6 col-lg-2">
+                    <div class="link">
+                        <h5 class="text-light">
+                            about us
+                        </h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html">Blog</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact us section -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact">
+                        <h5 class="text-light">
+                            Contact Us
+                        </h5>
+                        <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone. We are waiting for your call or
+                            message</p>
+                        <a class="w-100 custom-link" href="contact.html">Tourism Site @gmail.com</a>
+                        <ul class="media d-flex justify-content-between mt-5 list-unstyled gap-3">
+
+                            <li>
+
+                                <a class="d-block text-light" href="index.html"><i
+                                        class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i></a>
+                            </li>
+                            <li>
+
+                                <a class="d-block text-light" href="index.html"><i
+                                        class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i></a>
+                            </li>
+                            <li>
+
+                                <a class="d-block text-light" href="index.html"><i
+                                        class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i></a>
+                            </li>
+                            <li>
+
+                                <a class="d-block text-light" href="index.html"><i
+                                        class="fa-brands fa-whatsapp fa-lg watsapp rounded-circle p-2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+
+                <!-- Scripts -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/jquery-3.7.1.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

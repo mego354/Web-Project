@@ -55,100 +55,35 @@
     <main id="body_div">
 
         <header>
-            <h1>Booking</h1>
-            <p>Your ultimate destination for winter sports and skiing adventures!</p>
+            <h1>Contact us</h1>
+            <p>Your Satisfaction is our priority!</p>
         </header>
 
         <div class="container">
             <!-- Form Section -->
             <div class="form-container animate_animated animate_fadeIn">
-                <h2 class="text-center mb-4">Travel Booking Form</h2>
+                <h2 class="text-center mb-4">Contact us Form</h2>
     
                 <form id="booking-form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" />
                         <small class="text-danger error-message"></small>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="destination" class="form-label">Destination</label>
-                        <select class="form-select" id="destination" required>
-                            <option value="" disabled selected>--Select Destination--</option>
-                            <option value="Rome" data-cost="500">Rome</option>
-                            <option value="Paris" data-cost="400">Paris</option>
-                            <option value="Egypt" data-cost="300">Egypt</option>
-                            <option value="Maldives" data-cost="700">Maldives</option>
-                            <option value="Dubai" data-cost="600">Dubai</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="travel-method" class="form-label">Travel Method</label>
-                        <select class="form-select" id="travel-method" required>
-                            <option value="" disabled selected>--Select Travel Method--</option>
-                            <option value="Plane">Plane</option>
-                            <option value="Ship">Ship</option>
-                            <option value="Car">Car</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="payment-method" class="form-label">Payment Method</label>
-                        <select class="form-select" id="payment-method" required>
-                            <option value="" disabled selected>--Select Payment Method--</option>
-                            <option value="Credit Card">Credit Card</option>
-                            <option value="PayPal">PayPal</option>
-                            <option value="Bank Transfer">Bank Transfer</option>
-                        </select>
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="travel-date" class="form-label">Travel Date</label>
-                        <input type="date" class="form-control" id="travel-date" required />
-                        <small class="text-danger error-message"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Trip Type</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="fun-trip" name="trip-type" value="Fun Trip" />
-                                <label class="form-check-label" for="fun-trip">Fun Trip</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="business" name="trip-type" value="Business" />
-                                <label class="form-check-label" for="business">Business</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="education-trip" name="trip-type" value="Education Trip" />
-                                <label class="form-check-label" for="education-trip">Education Trip</label>
-                            </div>
-                        </div>
-                        <small class="text-danger error-message" id="trip-type-error"></small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="num-people" class="form-label">Number of People</label>
-                        <input type="number" class="form-control" id="num-people" min="1" required />
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" />
                         <small class="text-danger error-message"></small>
                     </div>
                     <div class="mb-3">
                         <label for="comments" class="form-label">Comments</label>
-                        <textarea class="form-control" id="comments" rows="3" placeholder="Add any comments (optional)"></textarea>
+                        <textarea class="form-control" id="comments" rows="3" placeholder="Add any comments"></textarea>
+                        <small class="text-danger error-message"></small>
                     </div>
                 
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    <button class="reset btn btn-secondary" type="reset">Reset</button>
-                </form>
-                
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>                
                 
             </div>
         </div>
@@ -239,7 +174,7 @@
                 <script src="js/bootstrap.js"></script>
                 <script src="js/popper.min.js"></script>
                 <script src="js/jquery-3.7.1.js"></script>
-                <script src="js/validate_book_form.js"></script>
+                <script src="js/validate_contact_form.js"></script>
             </div>
         </div>
     </div>
